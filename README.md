@@ -24,13 +24,13 @@ Voici comment reproduire les tests effectués dans le video attaché au projet
 
 Il est important de noter que le comportement du prototype alpha est influencé par la lumière ambiante ainsi que la proximitée des objets aux alentours (qui seraient détectés par le capteur d'ultrasons)
 
-1- Effectuer les branchements des capteurs/effecteurs (se réferer au fichier Fritzing)
-2- Proceder à l'installation de sqlite3 (se réferer au lien suivant : https://pimylifeup.com/raspberry-pi-sqlite/)
-3- Creer une base de donnée nommée alpha.db
-4- Executer le fichier alpha.py à partir de l'IDE natif (Thonny) du Raspberrypi
-5- Verifier que chaque Iteration est bien enregistrée dans une seance à l'aide de la console de Thonny.
-6- Manipuler l'objet connecté en suivant l'onglet "Utilisation"
-7- Verifier que les enregistrement ont bien été effectué dans la base de donnée alpha.db (par invite de commande ou interface graphique)
+- Effectuer les branchements des capteurs/effecteurs (se réferer au fichier Fritzing)
+- Proceder à l'installation de sqlite3 (se réferer au lien suivant : https://pimylifeup.com/raspberry-pi-sqlite/)
+- Creer une base de donnée nommée alpha.db
+- Executer le fichier alpha.py à partir de l'IDE natif (Thonny) du Raspberrypi
+- Verifier que chaque Iteration est bien enregistrée dans une seance à l'aide de la console de Thonny.
+- Manipuler l'objet connecté en suivant l'onglet "Utilisation"
+- Verifier que les enregistrement ont bien été effectué dans la base de donnée alpha.db (par invite de commande ou interface graphique)
 
 ## Vidéo
 Voici une vidéo démontrant le fonctionnement du prototype
