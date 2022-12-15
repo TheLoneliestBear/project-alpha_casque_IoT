@@ -34,7 +34,8 @@ Il est important de noter que le comportement du prototype alpha est influencé 
 
 ## Vidéo
 Voici une vidéo démontrant le fonctionnement du prototype
-URL : 
+URL : https://www.youtube.com/shorts/KMEKGlyRM1c
+
 
 ## Support
 Coordonnées : 1750956@crosemont.qc.ca
