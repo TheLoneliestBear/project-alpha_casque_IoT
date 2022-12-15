@@ -38,7 +38,9 @@ URL : https://www.youtube.com/shorts/KMEKGlyRM1c
 
 
 ## Support
-Coordonnées : 1750956@crosemont.qc.ca
+Coordonnées : 
+1750956@crosemont.qc.ca
+1952531@crosemont.qc.ca
 
 ## À venir
 Complexification des objets ainsi que du détail de la base de donnée. Implémentation de fonctionnalitées permettant de monitorer les données en temps reel et ce, à partir d'un ordinateur distant.
