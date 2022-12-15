@@ -109,5 +109,5 @@ class Iteration:
             lumiere = str(self._lumiere)
             indiceDanger = str(self._indicateurDanger)
             date = self._date.strftime("%d-%m-%Y, %H:%M:%S")
-        resultat = ""+idStr+" "+seance+" "+distance+" "+lumiere+" "+indiceDanger+" "+date
+        resultat = "ID de l'itération : "+idStr+", ID de la séance : "+seance+", Distance : "+distance+", Niveau de lumière : "+lumiere+", Indice de danger : "+indiceDanger+", Date : "+date
         return resultat

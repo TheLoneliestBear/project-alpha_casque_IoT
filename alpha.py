@@ -32,14 +32,16 @@ class Alpha() :
         self.__peripherique.eteindre_Buzzer()
         
     def _allumerLampe(self):
+        print("ATTENTION - Niveau de lumière faible... lampe allumée\n\n")
         self.__peripherique.allumer_LEDG()
     
     def _eteindreLampe(self):
+        print("Niveau de lumière normale... lampe éteinte\n\n")
         self.__peripherique.eteindre_LEDG()
 
     def __effectuerIteration(self, y, z): 
         
-        distance = self.__peripherique.observerDistance()
+        distance = round(self.__peripherique.observerDistance(),0)
         lumiere = self.__peripherique.observerLumiere()
         args = list()
         args.append(y)
@@ -82,12 +84,11 @@ class Alpha() :
             print("_ ___ Iteration start ___ _")
             while True :
                 
-                print("seance ID : "+str(self.__seance.id))#---
+                print("\n\nseance ID : "+str(self.__seance.id))#---
                 print("derniere iteration : "+str(self._derniereIteration))
                 it = self.__effectuerIteration(self.__seance.id, self._derniereIteration.indicateurDanger)
-                
-                print(round(it.distance, 0))
-                print(round(self._derniereIteration.distance, 0))
+                print("Distance de l'itération actuelle : " + str(round(it.distance, 0)))
+                print("Distance de la dernière itération : "+str(round(self._derniereIteration.distance, 0)))
                 if round(it.distance, 0) == round(self._derniereIteration.distance, 0) :
                     it.indicateurDanger += 10
                 else :
@@ -95,7 +96,7 @@ class Alpha() :
 
                 #Enregistrer l'itération dans la bd
                 IterationDAO.creer(it)
-                print("SAVED -    ")
+
                 print(it)
                 
                 if it.indicateurDanger > 50 :
@@ -109,7 +110,7 @@ class Alpha() :
                     self._eteindreLampe()
          
                 self._derniereIteration = it
-                time.sleep(5)
+                time.sleep(1)
 
         except PeripheriqueException as err:
             print(err)
